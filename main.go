@@ -32,7 +32,7 @@ const (
 )
 
 var (
-	addr      = flag.String("addr", ":8080", "http service address")
+	addr      = flag.String("addr", ":"+os.Getenv("PORT"), "http service address")
 	homeTempl = template.Must(template.New("").Parse(homeHTML))
 	filename  string
 	upgrader  = websocket.Upgrader{
@@ -171,7 +171,6 @@ func main() {
 		log.Fatal(err)
 	}
 }
-
 
 const homeHTML = `<!DOCTYPE html>
 <html lang="en">
