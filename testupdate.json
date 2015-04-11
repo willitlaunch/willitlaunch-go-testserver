@@ -1,0 +1,9 @@
+{
+  "outputWidgets":[
+    { "gid":1, "wid":3, "type":"dial", "label":"Voltage", "value":2.0, "min":0.0, "max":5.0}, 
+    { "gid":2, "wid":2, "type":"bars", "label":"Fuel levels", "values":[2.7,11.0], "mins":[0.0,0.0], "maxes":[10.0,11.0]}, 
+    { "gid":2, "wid":3, "type":"bool", "label":"Engine on", "value":false},
+    { "gid":3, "wid":3, "type":"bools", "label":"Warning lights", "values":[false, false, true, true]},
+    { "gid":3, "wid":2, "type":"map", "label":"Radar", "values":[[0.1,0.12], [0.5,0.0], [0.9,0.7]], "types": ["dot", "cloud", "wind"], "maptype": "radar"} 
+  ]
+}
